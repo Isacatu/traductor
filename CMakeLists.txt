@@ -4,12 +4,14 @@ project(Translater)
 
 # Incluir el subdirectorio de libpqxx
 add_subdirectory(externals/libpqxx)
+add_subdirectory(externals/zstd/build/cmake zstd_build)
 
 # Crear el ejecutable
 add_executable(Translater ./src/main.cpp)
 
 # Vincular la biblioteca libpqxx
 target_link_libraries(Translater pqxx)
+target_link_libraries(Translater libzstd_static)
 
 
 # Definir el path de los archivos de audio

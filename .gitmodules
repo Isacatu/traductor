@@ -1,3 +1,9 @@
 [submodule "externals/libpqxx"]
 	path = externals/libpqxx
 	url = https://github.com/jtv/libpqxx.git
+[submodule "externals/externals/zstd"]
+	path = externals/externals/zstd
+	url = https://github.com/facebook/zstd
+[submodule "externals/zstd"]
+	path = externals/zstd
+	url = https://github.com/facebook/zstd
